@@ -86,6 +86,7 @@ alias2 index_201703 -      -             -
 
 ## Reroute Shards Manually
 
+```
 curl -XPOST 'localhost:9200/_cluster/reroute' -d '{
     "commands" : [ {
         "move" :
@@ -101,4 +102,14 @@ curl -XPOST 'localhost:9200/_cluster/reroute' -d '{
         }
     ]
 }'
+```
 
+##  Log all queries
+
+```
+curl -XPUT http://localhost:9200/index_name/_settings -d '
+{
+  "index.search.slowlog.threshold.query.debug": "0s"
+}
+'
+```
