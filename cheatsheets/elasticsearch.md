@@ -57,6 +57,8 @@ index_201703 0     p      STARTED   2711407   9.5gb 127.0.1.1    hostname03
 index_201703 0     r      STARTED   2711407   9.5gb 127.0.1.1    hostname04
 ```
 
+`_cluster/allocation/explain`
+
 `_cat/nodes`
 
 ```
